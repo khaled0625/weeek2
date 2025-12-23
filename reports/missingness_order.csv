@@ -1,0 +1,7 @@
+,n_missing,p_missing,ascending
+quantity,534,0.10171428571428572,False
+status,513,0.09771428571428571,False
+created_at,507,0.09657142857142857,False
+amount,495,0.09428571428571429,False
+user_id,0,0.0,False
+order_id,0,0.0,False

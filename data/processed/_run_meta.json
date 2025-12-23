@@ -1,0 +1,11 @@
+{
+  "timestamp_utc": "2025-12-23T16:48:34.394436+00:00",
+  "rows": {
+    "orders": 5250,
+    "users": 1000
+  },
+  "outputs": {
+    "orders": "/home/khaled/SDAIA/week_2/data/processed/orders.parquet",
+    "users": "/home/khaled/SDAIA/week_2/data/processed/users.parquet"
+  }
+}
