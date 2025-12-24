@@ -55,5 +55,14 @@ def main() -> None:
     joined.to_parquet(out_path, index=False)
     print("wrote:", out_path)
 
+    summary = (
+        joined.groupby("country", dropna=False)
+        .agg(n=("order_id", "size"), revenue=("amount", "sum"))
+        .reset_index()
+        .sort_values("revenue", ascending=False)
+    )
+    print(summary)
+    summary.to_csv(ROOT/"reports"/"revenue_by_country.csv", index=False)
+
 if __name__ == "__main__":
     main()
