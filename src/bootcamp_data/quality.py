@@ -10,7 +10,7 @@ def assert_unique_key(df, key, allow_na=False):
     if not allow_na:
         assert df[key].notna().all, f"{key} contains NA"
     dup = df[key].duplicated(keep=False) & df[key].notnull()
-    assert not dup , f"{key} not unique; {dup.sum()} duplicate rows"
+    assert not dup.any() , f"{key} not unique; {dup.sum()} duplicate rows"
 def assert_in_range(series, lo=None, hi=None, name="value"):
     x = series.dropna()
     if lo is not None:
