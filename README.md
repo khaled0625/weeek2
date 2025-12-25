@@ -25,5 +25,7 @@ uv sync
  uv run run_day2_clean.py
  uv run run_day3_build_analytics.py
   ```
-## open python notebook
-- from this directory ```notebooks/eda.ipynb```
+## to run python notebook
+```bash 
+uv run jupyter lab notebooks.eda.ipynb
+```
