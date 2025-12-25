@@ -12,6 +12,8 @@ dependencies = [
     "plotly>=6.5.0",
     "kaleido>=1.2.0",
     "nbformat>=5.10.4",
+    "notebook>=7.5.1",
+    "jupyterlab>=4.5.1",
 ]
 
 [build-system]
