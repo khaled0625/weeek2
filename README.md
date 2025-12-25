@@ -18,13 +18,6 @@ cd weeek2
 uv sync
 ```
 ## Quick Start
-### note make suer you have raw data in this directory **data/raw**
-```bash
- cd python_scripts
- uv run run_day1_load.py
- uv run run_day2_clean.py
- uv run run_day3_build_analytics.py
-  ```
 ## to run python notebook
 ```bash 
 uv run jupyter lab notebooks.eda.ipynb
